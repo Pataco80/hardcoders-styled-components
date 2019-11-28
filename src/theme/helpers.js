@@ -1,12 +1,12 @@
-import { css } from 'styled-components'
+import { css } from "styled-components"
 
 export const colors = {
-  primary: '#499df3',
-  accent: '#ff4a00',
-  white: '#f1f4f5',
-  black: '#20272b',
-  grey: '#354147',
-  lightGrey: '#969ea2'
+  primary: "#499df3",
+  accent: "#ff4a00",
+  white: "#f1f4f5",
+  black: "#20272b",
+  grey: "#354147",
+  lightGrey: "#969ea2",
 }
 
 export const pxToRem = (px = 16) => {
@@ -23,7 +23,8 @@ export const layout = (px = 1170) => {
 const sizes = {
   large: 1200,
   medium: 900,
-  small: 600
+  small: 600,
+  xsmall: 300,
 }
 
 // Iterate through the sizes and create a media template
