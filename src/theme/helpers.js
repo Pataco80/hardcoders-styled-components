@@ -13,8 +13,8 @@ export const pxToRem = (px = 16) => {
   return `${px / 16}rem`
 }
 
-export const perCent = (perCent = "") => {
-  return `${perCent}%`
+export const perCent = (perCent = 100) => {
+  return `${(perCent / 100) * 100}%`
 }
 
 export const layout = ({ px = 1170, perCent = 100 }) => {
