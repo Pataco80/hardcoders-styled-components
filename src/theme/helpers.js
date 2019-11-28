@@ -17,11 +17,18 @@ export const perCent = (perCent = "") => {
   return `${perCent}%`
 }
 
-export const layout = (px = 1170) => {
-  return `
-    max-width: ${pxToRem(px)};
+export const layout = ({ px = 1170, perCent = 100 }) => {
+  if (layout.arguments === pxToRem()) {
+    return `
+    max-width:${pxToRem(px)};
     margin: 0 auto;
     padding: 0 ${pxToRem(8)};`
+  } else if (layout.arguments === perCent()) {
+    return `
+    max-width:${perCent(perCent)};
+    margin: 0 auto;
+    padding: 0 ${pxToRem(8)};`
+  }
 }
 
 const sizes = {
